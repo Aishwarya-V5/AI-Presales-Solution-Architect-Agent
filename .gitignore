@@ -1,0 +1,27 @@
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Real customer documents must never be committed
+data/samples/private/
+*.pdf
+*.xlsx
+*.docx
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
